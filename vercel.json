@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/$1",
+        "methods": [
+          "GET",
+          "POST",
+          "PUT",
+          "PATCH",
+          "OPTIONS",
+          "DELETE"
+        ]
+      }
+    ]
+  }
