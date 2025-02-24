@@ -3,10 +3,11 @@ import { onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
+const API_BASE_URL = 'https://masterplanhub.pythonanywhere.com'
 
 onMounted(async () => {
   try {
-    const response = await fetch('http://localhost:5000/api/projects')
+    const response = await fetch(`${API_BASE_URL}/api/projects`)
     const projects = await response.json()
     if (projects.length > 0) {
       router.replace(`/projects/${projects[0]}`)
