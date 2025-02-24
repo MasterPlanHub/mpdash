@@ -290,7 +290,7 @@ import { useRoute } from 'vue-router'
 import ProjectLog from '@/components/ProjectLog.vue'
 import LogActivityChart from '@/components/LogActivityChart.vue'
 
-const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+const baseUrl = import.meta.env.VITE_API_URL || 'https://masterplanhub.pythonanywhere.com'
 const route = useRoute()
 
 const units = ref([])
