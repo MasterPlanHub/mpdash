@@ -183,7 +183,7 @@
                   <td>
                     <v-avatar size="32" class="mr-2">
                       <v-img
-                        :src="`${baseUrl}/api/projects/${projectId}/images/${unit.Name.toLowerCase()}.svg`"
+                        :src="`${baseUrl}/api/projects/${projectId}/images/${unit.Name.toLowerCase()}`"
                         cover
                       ></v-img>
                     </v-avatar>
@@ -219,7 +219,7 @@
             >
               <v-card>
                 <v-img
-                  :src="`${baseUrl}/api/projects/${projectId}/images/${unit.Name.toLowerCase()}.svg`"
+                  :src="`${baseUrl}/api/projects/${projectId}/images/${unit.Name.toLowerCase()}`"
                   height="200"
                   cover
                   class="bg-grey-lighten-3"
